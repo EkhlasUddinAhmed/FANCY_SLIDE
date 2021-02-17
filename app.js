@@ -152,6 +152,7 @@ searchBtn.addEventListener('click', function () {
   const search = document.getElementById('search');
   getImages(search.value)
   sliders.length = 0;
+  document.getElementById('duration').value="";
 })
 
 sliderBtn.addEventListener('click', function () {
@@ -171,6 +172,7 @@ const toggleSpinner = () => {
 
 const summaryDetails = () => {
 
+  
   const searchValue = document.getElementById('search').value;
   const displaySummary = document.getElementById('finalSummary');
 
